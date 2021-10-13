@@ -1,6 +1,6 @@
 ==pepper==
 
-Clad in red and black streetwear slightly hidden behind an oversized rust colored duster pepper stomps into the room and stops. She squints at the two bright lights above the desk, grabbing a pair of aviators from a mess of bent and dirty sunglasses in her duster pocket. Her face goes from an uncomfrotable scowl to a somber tired look as she sits down and crosses her arms facing the interviewer.
+Clad in red and black streetwear slightly hidden behind an oversized rust colored duster Pepper stomps into the room and stops. She squints at the two bright lights above the desk, grabbing a pair of aviators from a mess of bent and dirty sunglasses in her duster pocket. Her face goes from an uncomfrotable scowl to a somber tired look as she sits down and crosses her arms facing the interviewer.
 
 She nods in recognition of the interviewer sitting across from her, as if she had just noticed that they were even present until now.
 
