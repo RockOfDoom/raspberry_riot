@@ -26,4 +26,4 @@ The interviewer already knew the names of everyone on the team.
     -> DONE
 * "Prettyheart Lovely Idol Strawberry."
     -> DONE
--> DONE
+* -> DONE
