@@ -1,3 +1,84 @@
 ==lee==
-Lee interview here
+VAR lee_transform = false
+
+Lee perked up even more when he heard his name. He stood up from the couch. "Hi," he said. "Come here." Lee walked quickly down the hall. He went through a door on the left. "This is my room," he said.
+The room was obviously cleaned today. The walls were painted a soft blue color. There was a bed in the right of the room with a violet floral blanket neatly made over it. On the left of the room was a desk with binders and folders neatly stacked and put in the corner. The walls were empty save for a heavily marked calendar over the desk.
+Lee sat down on the bed. The interviewer didn't know exactly what to do.
+"Can I sit here?" They asked, touching the top of the chair in front of the desk.
+"Sure," Lee said.
+"Thank you." The interviewer put down their leather bag and brought out a notebook and a black ballpoint pen. They looked at their notes and thought for a moment about what they wanted to ask him.
+
+-> lee_questions
+
+== lee_questions ==
+
+* "How did you become a magical girl?"[] The interviewer asked.
+    -> magical_girl_origin
+            
+* "What makes you the leader of Raspberry Riot? I mean, besides your name."
+    -> what_makes_you_leader
+        
+* "How did you choose your magical girl name?"
+    -> choose_your_name
+* "Can you explain your magical girl power?"
+    -> explain_powers
+    
+* "What's it like being a magical girl who is a boy?"
+    -> girl_who_is_a_boy
+    
+*   -> lee_conclusion
+
+== magical_girl_origin ==
+"It was when that big monster attacked the city, when the previous team was defeated," Lee began. "I'm sure you remember." The interviewer studied Lee, unsure of what he felt. He avoided eye contact. 
+After a moment, they realized he was done telling the story.
+    ** "Any other details you want to add?"
+        Lee looked around the room for a second. He picked at his finger nails with his other hand. "Um." He bit his lip. "No." 
+        -> lee_questions
+    ** "What caused you to find your powers?
+        "When someone with the potential to become a magical girl experiences something truly traumatic, they get special powers for the situation they are in," Lee said, looking at the calendar on the wall behind the interviewer.
+        *** "But what specifically happened to you that caused you to get your magical girl powers?"
+            "I don't really want to talk about that right now." Lee looked down at the floor between him and the interviewer.
+            **** [Ask another question.] -> lee_questions
+        *** [Ask another question.] -> lee_questions
+    ** [Ask another question.] -> lee_questions
+
+== what_makes_you_leader ==
+Lee made eye contact with the interviewer. "There's a few reasons. The first is that I'm the most organized." He pointed at the calendar on the wall. "On that calendar I have every meeting scheduled for the next school year. It was kind of hard to do, because some of us are in middle school and some of us are in high school, but it didn't take that long in the end. I overlayed the school calendars from the school website by printing out each page and tracing over them on clear plastic sheets." Lee was quiet for a moment. The interviewer looked at him, unsure if he was finished.
+"I was the one who wanted to meet every week," he went on. "I was the one who brought everyone together. At one point, people outside the team started calling me the leader, too. I was the one who you contacted first, right? That must mean something." Lee's words were confident, but the interviewer could see his arms shaking. 
+** [Ask another question.] -> lee_questions
+
+== choose_your_name ==
+"I really like raspberry jam," Lee said, eager the answer the question. "A part of being a magical girl is that you get to be glamorous and cute, so I wanted to pick a really cute name. I started with 'Raspberry Jam,' but I added more to it as time passed. You know, I'll admit that a lot of it was an attention thing. I thought people would care more about me if I had a more glamorous name. It turns out, having a striking name does make people pay more attention to you." Lee smiled, content with himself.
+** "Does the name 'Lee Nisim' not get you enough attention?"
+    "I like my regular name well enough. There's nothing wrong with it, honestly. I guess a part of me likes that I can have two different names. One that sparkles pink and one that is more usable. I can't imagine having people call me 'Steadfast Crystal Guardian Raspberry Jam' all the time." -> lee_questions
+** "Is all this for attention, then?"
+    "I mean, no." Lee wasn't happy with that. 
+    *** "Not at all?"
+        "Nope." 
+        **** "Not even a little?"
+            "No."
+            ***** "Are you sure?"
+                "Yeah. Don't you have any other questions?" -> lee_questions
+            ***** [Ask another question.] -> lee_questions
+        **** [Ask another question.] -> lee_questions
+    *** [Ask another question.] -> lee_questions
+
+== explain_powers ==
+~ lee_transform = true
+"I would love to. I have the power of rock, which isn't exactly the same thing as the power of earth or stone. Being a "rock" means that I'm strong, dependable, and unerodable. I'm stronger than average and I can always be there when you need me. Would you like to see me as Raspberry Jam?" Lee tapped their toes on the floor.
+"Yeah, that would be wonderful."
+"I was waiting for you to ask." Lee took out a bright pink stone from his pocket. He stood up and walked to the space between his bed and his door. "Magical rock power, activate!" He said. A bright light enveloped Lee. He floated a few inches into the air and started spinning. His hair grew until it fell around his shoulders. Two baby blue bows on either side of his head held his hair into two pony tails. His clothes were replaced by a form-fitting white tank top that covered his shoulders and a pink pleated skirt that fell just above his knees. A necklace fell around his neck with a shining silver medalion. Nearly-knee-high platform boots materialized around his feet, made of black leather. The stone he was holding morphed into a large circular shield with concentric pink, white, and blue stripes. Lee grabbed the shield out of the air and his transformation was complete. The glow wore off and he fell gracefully to the ground. 
+Lee was smiling widly. He spun on the tips of his toes and held out a hand to the interviewer. "Steadfast Crystal Guardian Raspberry Jam, pleased to meet you."
+The interviewer shook his hand graciously. "Your costume is beautiful. Did you design it?"
+"No. Just like my shield and my weapon, it sort of just came about. It represents me and fits perfectly, don't you think?" Lee sat back down on his bed. He cheerfully dangled his feet above the ground. The bottom of his platform boots touched the floor.
+** [Ask another question.] -> lee_questions
+    
+== girl_who_is_a_boy ==
+"Some people think that I wouldn't like to dress up all girly when I fight monsters with the team, but honestly I love it. It's like..." He looked up for a second, considering what he was going to say. "All my life I get to be a boy, which is fine. As Lee, I'm quieter and more anxious. I get scared that people look through me and see nothing. I feel comfortable with what I wear, but none of it stands out. When I get to be Raspberry Jam, I'm so different. I can say what I want, I'm not nervous what people will think of me, and I just feel so bright. But I don't like to be that way all the time. I get tired and then I want to be Lee again. I guess I'm lucky that I get to choose like that."
+    "That's a wonderful statement. Thank you."
+    ** [Ask another question.] -> lee_questions
+    
+== lee_conclusion ==
+"Thank you for your time. Can you send someone else to come in?"
+"Sure," Lee said. "Who do you want to talk to next?"
 -> selection

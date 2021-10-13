@@ -26,4 +26,9 @@ The interviewer already knew the names of everyone on the team.
     -> DONE
 * "Prettyheart Lovely Idol Strawberry."
     -> DONE
-* -> DONE
+* -> conclusion
+
+===conclusion===
+Satisfied with their answers, the interviewer left. "Thank you for your time," they said. "Look in the paper for my article!"
+All of the girls waved good-bye.
+-> DONE
