@@ -1,3 +1,70 @@
 ==sebastian==
-Sebastian interview here.
+
+Magical Seaglass Soldier Huckleberry, or Sebastian Linkle to his classmates.
+
+16 years old, he's always in all of the plays at his high school but everyone says the only people he really talks to are the other Raspberry Riot girls. 
+
+No external friends or social life to speak of, yet in the field he's generally considered the flashiest showman of the team.
+
+The reporter knows a tough nut to crack when they see one, and boy do they see one sitting in front of them.
+
+-> sebastian_choices
+
+
+
+
+==sebastian_choices===
+
+* "How long have you been part of the team?"
+    -> sebastian_q1
+* "How did you become a magical girl?"
+    -> sebastian_q2
+* "How did you choose your magical girl name?"
+    -> sebastian_q3
+-> sebastian_wrapup
+
+
+
+
+==sebastian_q1===
+
+"About 10 months, give or take." 
+
+Huckleberry mumbles. His nervous demeanor and hesitance to make eye contact clash with his extravagant blue skirt and gleaming glass necklace.
+
+"That's not long after the alien attack on your school, was there some sort of connection?" the reporter gently prods.
+
+"Yeah." There's a long pause, like Huckleberry is deciding whether he even wants to elaborate. Eventually, he continues: "I...got my powers towards the end of the attack, and then there were some openings so..."
+
+He trails off, and looks like he doesn't want to continue.
+
+-> sebastian_choices
+
+
+
+
+==sebastian_q2===
+
+"It's...I dunno." Huckleberry shifts his skirt uncomfortably and adjusts his position in his seat. "I don't really like to talk about it."
+
+The reporter recognizes a dead end when they see one.
+
+-> sebastian_choices
+
+
+
+
+==sebastian_q3===
+
+
+
+-> sebastian_choices
+
+
+
+
+==sebastian_wrapup===
+
+
+
 -> selection
