@@ -1,0 +1,30 @@
+-> kokoro
+=== kokoro ===
+
+Prettyheart Lovely Idol Strawberry. 
+It was definitely a long-winded name, but it spoke to the girl's enthusiasm for being part of a magical girl team. It was kind of endearing, in a way.
+Putting the thought out of his mind, the reporter approached her. 
+"Hey there, Kokoro." Kokoro Sasaki was the youngest member of the group, at the tender age of 14. She had short pink hair, with a streak of blue in the back. She had looked so nervous when the reported had approached, he was beginning to feel a bit of it second-hand. 
+"H-Hi! My name is Kokoro Sasaki!" She bowed, rather unnecessarily. "Or, um, Prettyheart Lovely Idol Strawberry! Cause I'm working on being an idol in my free time!" She struck a fairly cliche pose. It was a little endearing, really. 
+"It's nice to meet you, I'm [Reporter]. There's no need to be nervous, I just want to ask you a few questions. Is that okay?"
+Kokoro gave him a stiff nod, so he proceeded.
+
+-> askkokoro
+
+=== askkokoro ===
+
+"Alright, thank you. So, I was wondering..."
+*"How long have you been part of the team?"
+"Well, it's been...Geez, almost a year at this point." Kokoro smiles fondly, remembering the experience. "I came in after that big fight with the alien monster downtown. Y'know, the one that destroyed town hall?"
+"Oh yeah, I remember hearing about that." She fell silent, so that was all he was going to get out of that question.
+-> askkokoro
+*Do you like being a magical girl, and part of Raspberry Riot?
+Kokro's smile faltered a little, but she nodded. "Definitely! Everyone is really nice, and I love that I can fight to keep everyone in this town safe. See, I kinda grew up here, and haven't really ever left, so this town is home to me. And everyone should get the chance to defend their home! I'd hate it if I were stuck doing nothing, relying on someone else. Oh, but-" She shook her head, hastening to add on to her previous statement, "-You can rely on me, and the rest of the Raspberry Riot! We'll make sure to protect you all, fighting for Love, Truth, and everything good in the world!" She struck another pose, clearly practiced. 
+"That's quite a mission statement."
+-> askkokoro
+* "What do you think about your teammates?"
+Kokoro considered the question for a moment. "Let's see...There's Lee, our lee-der!" She giggled at her own pun. "They're always pushing us to do our best and making sure that nobody gets lazy or complacent!" 
+[Reporter] nodded. "What about Sebas-Oop, we're out of time. I'll get your other perspectives later."
+-> askkokoro
+
+-> DONE
