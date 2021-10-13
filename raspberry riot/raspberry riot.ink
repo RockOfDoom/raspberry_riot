@@ -23,9 +23,9 @@ The interviewer already knew the names of everyone on the team.
 * "YoungOGSavage."
     -> DONE
 * "Pepper."
-    -> DONE
+    -> pepper
 * "Prettyheart Lovely Idol Strawberry."
-    -> DONE
+    -> kokoro
 * -> conclusion
 
 ===conclusion===
