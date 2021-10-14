@@ -1,10 +1,8 @@
 INCLUDE lee
-INCLUDE serena
+INCLUDE sebastian
 INCLUDE clancy
 INCLUDE diana
 INCLUDE kokoro
-INCLUDE stateMachines
-
 
 -> opening
 
@@ -19,7 +17,7 @@ The interviewer already knew the names of everyone on the team.
 
 ===selection===
 * "Magical Seaglass Soldier Huckleberry."
-    -> serena
+    -> sebastian
 * "Steadfast Crystal Guardian Raspberry Jam."
     -> lee
 * "YoungOGSavage."
