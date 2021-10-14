@@ -23,7 +23,7 @@ The interviewer already knew the names of everyone on the team.
 * "Steadfast Crystal Guardian Raspberry Jam."
     -> lee
 * "YoungOGSavage."
-    -> DONE
+    -> clancy
 * "Pepper."
     -> pepper
 * "Prettyheart Lovely Idol Strawberry."
