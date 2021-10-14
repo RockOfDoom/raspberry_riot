@@ -1,0 +1,96 @@
+
+
+==serena==
+
+Magical Seaglass Soldier Huckleberry, or Serena Linkle to her classmates.
+
+16 years old. She's always in all of the plays at her high school, but everyone says the only people she really talks to are the other Raspberry Riot girls. 
+
+No external friends or social life to speak of, yet in the field she's generally considered the flashiest showgirl of the team.
+
+The reporter knows a tough nut to crack when they see one, and boy do they see one sitting in front of them.
+
+-> serena_choices
+
+
+
+
+==serena_choices===
+
+* "How long have you been part of the team?"
+    -> serena_q1
+* "How did you become a magical girl?"
+    -> serena_q2
+* "How did you choose your magical girl name?"
+    -> serena_q3
+* "Can you explain your powers?"
+    -> serena_q4
+* -> serena_wrapup
+
+
+
+
+==serena_q1===
+
+"Oh...about 10 months, give or take." 
+
+Huckleberry mumbles. Her nervous demeanor and hesitance to make eye contact clash with her extravagant blue skirt and gleaming glass necklace.
+
+"That's not long after the alien attack on your school, was there some sort of connection?" the reporter gently prods.
+
+"Yeah." There's a long pause, like Huckleberry is deciding whether she even wants to elaborate. Eventually, she continues: "I...got my powers towards the end of the attack, and then there were some openings so..."
+
+She trails off, and looks like she doesn't want to continue.
+
+-> serena_choices
+
+
+
+
+==serena_q2===
+
+"It's...I dunno." Huckleberry shifts her skirt uncomfortably and adjusts her position in her seat. "I don't really like to talk about it."
+
+The reporter recognizes a dead end when they see one.
+
+-> serena_choices
+
+
+
+
+==serena_q3===
+
+Huckleberry sits up a little straighter and puts on a radiant smile. It's like looking at a different person.
+
+"Well, I had to come up with a lot of names to make sure the one I picked would fit with the team theme, you know?" she spouts with surprising energy. "Ultimately, 'Magical Seaglass Soldier Huckleberry' just fit the best between my powers and my space in the team. Plus, it's just fun to say, isn't it?"
+
+As she says so, she makes a small gesture that causes her glass necklace to sparkle and chime. The reporter suspects that this is on purpuse.
+
+-> serena_choices
+
+
+
+
+==serena_q4===
+
+Huckleberry's glass necklace chimes as she sits forward in her seat. "Well, my base power is that I can control water. It's classic stuff, but if you know how to catch the light and make it sparkle it can still look pretty spectacular."
+
+She straightens a little and claps her hands. When she separates them glittering teal water droplets fill the air between them. "But this is the really special stuff. I call them 'Lovely Crystal Tears', and I can make them.." she flourishes her hand and a line of sparkling water is sketched into the air, "out of thin air!"
+
+She sits back, and continues more casually: "I can use the Tears to heal the other girls, and they're also good for blocking magic and lasers and other things like that."
+
+Huckleberry looks quite pleased with herself.
+
+-> serena_choices
+
+
+
+
+==serena_wrapup===
+
+"Thank you, that's all the questions I had." says the reporter. "It was a pleasure to meet you, and to speak with you!"
+
+"O-oh, likewise!" stutters out Huckleberry. She shakes the reporter's hand, and the reporter moves on to the next order of business.
+
+-> selection
+
