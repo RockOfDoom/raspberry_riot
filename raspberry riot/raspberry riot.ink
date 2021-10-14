@@ -1,5 +1,5 @@
 INCLUDE lee
-INCLUDE sebastian
+INCLUDE serena
 INCLUDE clancy
 INCLUDE diana
 INCLUDE kokoro
@@ -36,7 +36,7 @@ The room was obviously cleaned today. The walls were painted a soft blue color. 
 ===selection===
 {selection > 1: "While you're out there, could you send in..."}
 * "Magical Seaglass Soldier Huckleberry{selection <= 1:.}{selection > 1:?}"
-    -> sebastian
+    -> serena
 * "Steadfast Crystal Guardian Raspberry Jam{selection <= 1:.}{selection > 1:?}"
     -> lee
 * "YoungOGSavage{selection <= 1:.}{selection > 1:?}"
