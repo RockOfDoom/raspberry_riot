@@ -8,9 +8,25 @@ Magical Seaglass Soldier Huckleberry, or Serena Linkle to her classmates.
 
 No external friends or social life to speak of, yet in the field she's generally considered the flashiest showgirl of the team.
 
-The reporter knows a tough nut to crack when they see one, and boy do they see one sitting in front of them.
+Serena stalks into Lee's room, looking fairly tired. She's wearing a pale blue hoodie that's much too big for her, some worn-out jeans, and some unremarkable sneakers.
 
--> serena_choices
+Before Isaac can even get a word in she silently moves to the center of the room, pulls a light purple crystal out of her hoodie pocket, and exclaims "Magic Crystal Berry, Transformation!"
+
+A bright teal-green light fills the room, and Serena lifts into the air glowing with power. She begins to spin gracefully, like a ballet dancer, and her hair comes unbound—floating around her face like she's underwater. A sea-green ribbon ties itself in the back of her hair, and a shimmering seaglass necklace appears around her neck. Water droplets appear in the air around her, and flow onto her body, sparkling and forming an ornate and lace-covered skirt and blouse set. Her legs are covered in tight white leggings covered with tiny gleaming clear beads; her shoes are replaced by a pair of small, rounded high heels with little teal ribbon-bows on the front. Finally, she throws her crystal into the air, where it twirls and transforms into a magical staff. She catches it as it falls, and twirls it as she returns to the ground.
+
+When she touches down, Serena cheerfully spouts "Magical Seaglass Soldier Huckleberry, at your service!"
+
+* [Thank Serena for the demonstration.] "Ah, that was a wonderful demonstration of your powers! Thank you."
+    "Of course!" Serena, no, Huckleberry replies. She gives a brief curtsy.
+    ->serena_choices
+* [Tell Serena she didn't have to transform yet.] "Oh, I appreciate the thought but that won't be strictly necessary for this interview. If you would feel more comfortable out of costume, feel free." Isaac explained.
+    "Well, I expect you came here to speak with Huckleberry, not Serena, yes? She IS the more interesting of the two."
+    "I'm happy to speak with both, whichever way will make this easier for you." replied Isaac.
+    "If it's the same either way," said Huckleberry, "I'd prefer to stay in costume."
+    "That works for me." Isaac says.
+    ->serena_choices
+* [Refrain from commenting.] Isaac decides to not linger too long on the transformation and get right into the interview.
+    -> serena_choices
 
 
 
