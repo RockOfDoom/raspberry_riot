@@ -3,6 +3,7 @@ INCLUDE sebastian
 INCLUDE clancy
 INCLUDE diana
 INCLUDE kokoro
+INCLUDE stateMachines
 
 -> opening
 
