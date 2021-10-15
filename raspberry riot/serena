@@ -1,7 +1,7 @@
 
 
 ==serena==
-
+VAR monsterQ_cycle = 0
 Magical Seaglass Soldier Huckleberry, or Serena Linkle to her classmates.
 
 16 years old. She's always in all of the plays at her high school, but everyone says the only people she really talks to are the other Raspberry Riot girls. 
@@ -43,8 +43,10 @@ When she touched down, Serena cheerfully spouted "Magical Seaglass Soldier Huckl
     -> serena_q4
 * "What do you think of the other girls?"
     -> serena_q5
-* "How do you feel about always having to fight monsters in order to protect the City?"
+* {monsterQ_cycle == 0} "How do you feel about always having to fight monsters in order to protect the City?"
     -> serena_q6
+* {monsterQ_cycle == 1 && huckleberry >= is_lonely} "You're not afraid that your or your friends might get hurt?"
+    -> serena_worriesMonsters
 * {serena_choices > 1} "That's all the questions I had, thank you."
     -> serena_wrapup
 
@@ -102,7 +104,13 @@ Huckleberry stood up a little straighter and put on a radiant smile.
 
 "Well, I had to come up with a lot of names to make sure the one I picked would fit with the team theme, you know?" she spouted with surprising energy. "Ultimately, 'Magical Seaglass Soldier Huckleberry' just fit the best between my powers and my space in the team. Plus, it's just fun to say, isn't it?"
 
-As she said so, she made a small gesture that caused her glass necklace to sparkle and chime. The reporter suspected that this was on purpuse.
+As she said so, she made a small gesture that caused her glass necklace to sparkle and chime. The reporter suspected that this was on purpuse.{huckleberry == is_the_culprit:
+    
+    * [Press her about the monsters.] "Is that all of your powers?"
+        -> serena_confrontation
+    * [Leave it be.] Isaac decided not to press Huckleberry about the monsters. Not now, at least.
+        -> serena_choices
+}
 
 -> serena_choices
 
@@ -140,7 +148,7 @@ Huckleberry looked quite pleased with herself.
 
 
 ==serena_q6===
-{move_to_state(monster_knowledge, monsterKing_dead)}
+{move_to_state(monster_knowledge, monsterKing_dead)}{~monsterQ_cycle++}
 "Honestly?" Huckleberry started, "It's kind of exciting."
 
 "It definitely used to be scarier, back when we were up against King Goregamesh, but ever since we handled him the monsters have been way less dangerous." She tapped her staff against the ground firmly, {monster_knowledge == girl_making_monsters:almost like she was trying to convince herself.}{monster_knowledge < girl_making_monsters:as if to emphasize her point.}
@@ -150,6 +158,73 @@ Huckleberry looked quite pleased with herself.
 "I still don't know what they did about the laser eyes though, that seems like that would make keeping it IN the tank much harder."
 
 -> serena_choices
+
+
+
+==serena_worriesMonsters===
+{move_to_state(huckleberry, worries_abt_noMonsters)}
+"Not at all, we're all plenty capable." Huckleberry stated confidently. "Honestly, in the weeks after our fight with Goregamesh I was more worried that we were going to run out!"
+
+"Run out of monsters?" Isaac asked, puzzled.
+
+"Yeah, out of monsters. I love being Huckleberry, and I love Raspberry Riot. There's not much reason for either if there aren't any monsters to fight, is there?"
+
+"That's a bit of a gloomy outlook, don't you think?"
+
+"Not gloomy, no." said Huckleberry. "It's a matter of practicality. There's never been a 'peacetime' magical girl crew. And people like us lots, but I don't think they like us enough to make us the first."
+
+->serena_choices
+
+
+
+==serena_confrontation===
+
+"What do you mean?" asked Huckleberry.
+
+"Well, you have 'Magical' in your name, do you not do magic?"
+
+"I'm not sure what you mean, all of what we do is magic." Huckleberry stated boredly.
+
+* [Push forward.] "Of course, right. I should be more specific. I mean more general magic, like the kind that can summon or create monsters?"
+    ->serena_confrontation2
+* [Stop Pushing.] "Of course, of course. That was a silly question."
+    -> serena_choices
+
+
+
+==serena_confrontation2===
+
+"What are you implying?" asked Huckleberry, sounding insulted.
+
+"You know magic, and only being with magic can make monsters. The last magical being who was willing to make monsters was King Goregamesh, who you and Raspberry Riot defeated. Instead of celebrating the defeat of Goregamesh, you were busy worrying about what to fight next, because you don't seem to have any friends or meaningful personal connections outside of Raspberry Riot."
+
+Huckleberry started to protest, but Isaac interrupted her: "Look, it doesn't paint a good picture and I know I'm pretty sure that you're the one summoning monsters, all things considered."
+
+Huckleberry glared at Isaac with a mixture of anger and frustration. She spent a moment considering something, then looked Isaac in his eyes. "Ok, and? What are you going to do about it?" she asked cooly.
+
+"I haven't decided yet," said Isaac, "but I'm a reporter, not a cop. So I suppose I either report what I've found, or I don't."
+
+Isaac continued: "Now, I can imagine you don't want me to report on this, as I can't imagine that ends well for you. And in any other circumstance, I'd publish this in a heartbeat: stories like this come along once in a lifetime."
+
+Isaac slumped back in Lee's desk chair, and wiped his forehead tiredly. "But you're so young. I'm not going to pretend I don't understand what you're doing, but you're putting the city in danger. So give me a reason not to publish this. I can just write the nice set of interviews I came here to get, but only if..."
+
+"Only if what?" asked Huckleberry, her expression unreadable.
+
+"I haven't decided yet." Isaac said.
+
+"How helpful." sassed Huckleberry. "Are we done here?"
+
+"If you want to be." said Isaac.
+
+"Great, I'll be on my way then." Huckleberry strutted towards the door of Lee's room, but turned back to look at Isaac in the threshold.
+
+"I hope you make the right decision." she said coldly, glaring at Isaac surrounded by a dim teal glow and an aura of power.
+
+She stormed out of the room, hoping that he hadn't noticed her hand trembling on her staff.
+
+He had.
+
+->selection
 
 
 
