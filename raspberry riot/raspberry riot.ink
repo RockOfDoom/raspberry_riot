@@ -4,6 +4,7 @@ INCLUDE clancy
 INCLUDE diana
 INCLUDE kokoro.ink
 INCLUDE stateMachines
+INCLUDE endings.ink
 
 -> opening
 
