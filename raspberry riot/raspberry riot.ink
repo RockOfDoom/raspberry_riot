@@ -2,7 +2,7 @@ INCLUDE lee
 INCLUDE serena
 INCLUDE clancy
 INCLUDE diana
-INCLUDE kokoro
+INCLUDE kokoro.ink
 INCLUDE stateMachines
 
 -> opening

@@ -16,7 +16,7 @@ A bright teal-green light fills the room, and Serena lifts into the air glowing 
 
 When she touches down, Serena cheerfully spouts "Magical Seaglass Soldier Huckleberry, at your service!"
 
-* [Thank Serena for the demonstration.] "Ah, that was a wonderful demonstration of your powers! Thank you."
+* [Thank Serena for the demonstration.] "That was a wonderful demonstration of your powers! Thank you."
     "Of course!" Serena, no, Huckleberry replies. She gives a brief curtsy.
     ->serena_choices
 * [Tell Serena she didn't have to transform yet.] "Oh, I appreciate the thought but that won't be strictly necessary for this interview. If you would feel more comfortable out of costume, feel free." Isaac explained.
@@ -41,16 +41,19 @@ When she touches down, Serena cheerfully spouts "Magical Seaglass Soldier Huckle
     -> serena_q3
 * "Can you explain your powers?"
     -> serena_q4
-* -> serena_wrapup
+* "What do you think of the other girls?"
+    -> serena_q5
+* "How do you feel about always having to fight monsters in order to protect the City?"
+    -> serena_q6
+* {serena_choices > 1} "That's all the questions I had, thank you."
+    -> serena_wrapup
 
 
 
 
 ==serena_q1===
 
-"Oh...about 10 months, give or take." 
-
-Huckleberry mumbles. Her nervous demeanor and hesitance to make eye contact clash with her extravagant blue skirt and gleaming glass necklace.
+"About 10 months, give or take." Huckleberry states. 
 
 "That's not long after the alien attack on your school, was there some sort of connection?" the reporter gently prods.
 
@@ -65,9 +68,9 @@ She trails off, and looks like she doesn't want to continue.
 
 ==serena_q2===
 
-"It's...I dunno." Huckleberry shifts her skirt uncomfortably and adjusts her position in her seat. "I don't really like to talk about it."
+"It's...I dunno." Huckleberry shifts her skirt uncomfortably. "I don't really like to talk about it."
 
-The reporter recognizes a dead end when they see one.
+Isaac recognizes a dead end when he sees one.
 
 -> serena_choices
 
@@ -76,7 +79,7 @@ The reporter recognizes a dead end when they see one.
 
 ==serena_q3===
 
-Huckleberry sits up a little straighter and puts on a radiant smile. It's like looking at a different person.
+Huckleberry stands up a little straighter and puts on a radiant smile.
 
 "Well, I had to come up with a lot of names to make sure the one I picked would fit with the team theme, you know?" she spouts with surprising energy. "Ultimately, 'Magical Seaglass Soldier Huckleberry' just fit the best between my powers and my space in the team. Plus, it's just fun to say, isn't it?"
 
@@ -89,13 +92,43 @@ As she says so, she makes a small gesture that causes her glass necklace to spar
 
 ==serena_q4===
 
-Huckleberry's glass necklace chimes as she sits forward in her seat. "Well, my base power is that I can control water. It's classic stuff, but if you know how to catch the light and make it sparkle it can still look pretty spectacular."
+Huckleberry's glass necklace chimes as she sits forward in her seat. "Well, my basic power is that I can control water. It's classic stuff, but if you know how to catch the light and make it sparkle it can still look pretty spectacular."
 
 She straightens a little and claps her hands. When she separates them glittering teal water droplets fill the air between them. "But this is the really special stuff. I call them 'Lovely Crystal Tears', and I can make them.." she flourishes her hand and a line of sparkling water is sketched into the air, "out of thin air!"
 
 She sits back, and continues more casually: "I can use the Tears to heal the other girls, and they're also good for blocking magic and lasers and other things like that."
 
 Huckleberry looks quite pleased with herself.
+
+-> serena_choices
+
+
+
+==serena_q5===
+
+"Oh, they're all lovely." says Huckleberry.
+
+"Strawberry is cute enough to kill, and not half bad at her job either. Everyone likes her, though, so nothing special there..." Huckleberry muses.
+
+"Pepper can be a little standoffish but she's sweet once you get to know her, she always has your back when you need her." she continues.
+
+"YoungOGSavage is definitely a character. I think we get the most questions about him, but he's fun to have around and he has a great work ethic."
+
+"And Raspberry Jam. Well, we don't always see eye to eye about how the team should be run but," Huckleberry haughtily flips some of her hair out of her face, "I still never doubt that he has everyone's best interests at heart."
+
+-> serena_choices
+
+
+
+==serena_q6===
+{move_to_state(monster_knowledge, monsterKing_dead)}
+"Honestly?" Huckleberry starts, "It's kind of exciting."
+
+"It definitely used to be scarier, back when we were up against King Goregamesh, but ever since we handled him the monsters have been way less dangerous." She tapped her staff against the ground firmly, {monster_knowledge == girl_making_monsters:almost like she was trying to convince herself.}{monster_knowledge < girl_making_monsters:as if to emphasize her point.}
+
+"But nowadays," she continued, "the guys we fight are kind of goofy. Last week, someone's pet lobster tripled in size and we had to catch it and return it to them." Huckleberry covered her mouth with the back of her hand to hold in a laugh. "They couldn't shrink it back, so they just got it a bigger tank! I guess some people will do anything for their pets...so strange."
+
+"I still don't know what they did about the laser eyes though, that seems like that would make keeping it IN the tank much harder."
 
 -> serena_choices
 
