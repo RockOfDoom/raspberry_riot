@@ -1,8 +1,10 @@
 LIST team_trust = none, wary, tentative, trusting
 LIST monster_knowledge = none, monsterKing_dead, monsters_should_have_stopped, girl_making_monsters
+LIST huckleberry = none, is_lonely, worries_abt_noMonsters, is_the_culprit
 
 ~team_trust = team_trust.none
 ~monster_knowledge = monster_knowledge.none
+~huckleberry = huckleberry.none
 
 
 == function move_to_state(ref machine, state) ===
