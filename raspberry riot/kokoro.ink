@@ -1,4 +1,4 @@
--> kokoro
+
 === kokoro ===
 
 It was definitely a long-winded name, but it spoke to the girl's enthusiasm for being part of a magical girl team. It was kind of endearing, in a way.
