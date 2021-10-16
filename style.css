@@ -3,7 +3,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
-    background: white;
+    background: #ffb3b5;
     overflow: hidden;
 }
 
@@ -20,6 +20,7 @@ h2 {
 }
 
 h1 {
+  font-family: 'Fredoka One', cursive;
     font-size: 30pt;
     margin-bottom: 10px;
 }
@@ -33,6 +34,7 @@ h2 {
 }
 
 .header {
+font-family: 'Fredoka One', cursive;
     padding-top: 3em;
     padding-bottom: 3em;
 }
@@ -63,7 +65,7 @@ h2 {
     top: 0;
 }
 
-/* 
+/*
   Enables <iframe> support work on itch.io when using mobile iOS
 */
 .outerContainer {
@@ -97,7 +99,7 @@ h2 {
     margin: 0 auto;
     padding: 20px;
     padding-top: 4em;
-    background: white;
+    background: #ffb3b5;
 }
 
 .switched .container {
@@ -105,8 +107,9 @@ h2 {
 }
 
 p {
-    font-size: 13pt;
-    color: #888;
+    font-size: 16pt;
+    color: #1F2421;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.7em;
     font-weight: lighter;
 }
@@ -157,7 +160,7 @@ img {
     line-height: 1.7em;
 }
 
-/* 
+/*
   Class applied to first choice
 */
 :not(.choice)+.choice {
@@ -171,7 +174,7 @@ img {
     font-size: 15pt;
 }
 
-/* 
+/*
   Built-in class:
     The End # CLASS: end
 */
@@ -214,7 +217,7 @@ img {
     }
 }
 
-/* 
+/*
   Dark Theme (Added in Inky 0.10.0)
     # theme: dark
 */
