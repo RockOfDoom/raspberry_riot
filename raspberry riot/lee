@@ -1,60 +1,64 @@
 ==lee==
 VAR lee_transform = false
+VAR lee_likes_you = true
 
-Lee perked up even more when he heard his name. He stood up from the couch. "Hi," he said. "Come here." Lee walked quickly down the hall. He went through a door on the left. "This is my room," he said.
-The room was obviously cleaned today. The walls were painted a soft blue color. There was a bed in the right of the room with a violet floral blanket neatly made over it. On the left of the room was a desk with binders and folders neatly stacked and put in the corner. The walls were empty save for a heavily marked calendar over the desk.
-Lee sat down on the bed. The interviewer didn't know exactly what to do.
-"Can I sit here?" They asked, touching the top of the chair in front of the desk.
-"Sure," Lee said.
-"Thank you." The interviewer put down their leather bag and brought out a notebook and a black ballpoint pen. They looked at their notes and thought for a moment about what they wanted to ask him.
+Lee sat down on his bed. He looked at Isaac.
 
 -> lee_questions
 
 == lee_questions ==
 
-* "How did you become a magical girl?"[] The interviewer asked.
-    -> magical_girl_origin
-            
-* "What makes you the leader of Raspberry Riot? I mean, besides your name."
-    -> what_makes_you_leader
-        
-* "How did you choose your magical girl name?"
-    -> choose_your_name
+* "Are you all good friends? Are there any issues between the team?"
+    -> good_friends
+
 * "Can you explain your magical girl power?"
     -> explain_powers
+    
+* "How did you become a magical girl?"
+    -> magical_girl_origin
+            
+* "How did you choose your magical girl name?"
+    -> choose_your_name
+
+* {monster_knowledge == monsterKing_dead} "It's been a while since your big battle against the King of Kings, Goregamesh, right? So how often do you fight monsters nowadays?"
+    -> how_often
     
 * "What's it like being a magical girl who is a boy?"
     -> girl_who_is_a_boy
     
+* {monster_knowledge == monsters_should_have_stopped} "What do you think could be making the monsters now that Goregamesh is defeated?"
+    -> source_of_monsters
+            
+* "What makes you the leader of Raspberry Riot? I mean, besides your name."
+    -> what_makes_you_leader
+        
+* "Those are all my questions."
+    -> lee_conclusion
+
 *   -> lee_conclusion
 
 == magical_girl_origin ==
-"It was when that big monster attacked the city, when the previous team was defeated," Lee began. "I'm sure you remember." The interviewer studied Lee, unsure of what he felt. He avoided eye contact. 
-After a moment, they realized he was done telling the story.
+"It was when that big monster attacked the city, when the previous team was defeated," Lee began. "I'm sure you remember." Isaac studied Lee, unsure of what he felt. He avoided eye contact. 
+After a moment, he realized he was done telling the story.
     ** "Any other details you want to add?"
-        Lee looked around the room for a second. He picked at his finger nails with his other hand. "Um." He bit his lip. "No." 
+        Lee looked around the room for a second. He picked at his fingernail with his other hand. "Um." He bit his lip. "No." 
+        ~ lee_likes_you = false
         -> lee_questions
-    ** "What caused you to find your powers?
-        "When someone with the potential to become a magical girl experiences something truly traumatic, they get special powers for the situation they are in," Lee said, looking at the calendar on the wall behind the interviewer.
-        *** "But what specifically happened to you that caused you to get your magical girl powers?"
-            "I don't really want to talk about that right now." Lee looked down at the floor between him and the interviewer.
-            **** [Ask another question.] -> lee_questions
-        *** [Ask another question.] -> lee_questions
     ** [Ask another question.] -> lee_questions
 
 == what_makes_you_leader ==
-Lee made eye contact with the interviewer. "There's a few reasons. The first is that I'm the most organized." He pointed at the calendar on the wall. "On that calendar I have every meeting scheduled for the next school year. It was kind of hard to do, because some of us are in middle school and some of us are in high school, but it didn't take that long in the end. I overlayed the school calendars from the school website by printing out each page and tracing over them on clear plastic sheets." Lee was quiet for a moment. The interviewer looked at him, unsure if he was finished.
-"I was the one who wanted to meet every week," he went on. "I was the one who brought everyone together. At one point, people outside the team started calling me the leader, too. I was the one who you contacted first, right? That must mean something." Lee's words were confident, but the interviewer could see his arms shaking. 
+Lee made eye contact with Isaac. "There's a few reasons. The first is that I'm the most organized." He pointed at the calendar on the wall. "On that calendar I have every meeting scheduled for the next school year. I was also the one who wanted to meet every week," he went on. "I was the one who brought everyone together. At one point, people outside the team started calling me the leader, too. I was the one who you contacted first, right? That must mean something." Lee's words were confident, but Isaac could see his arms shaking. 
 ** [Ask another question.] -> lee_questions
 
 == choose_your_name ==
-"I really like raspberry jam," Lee said, eager the answer the question. "A part of being a magical girl is that you get to be glamorous and cute, so I wanted to pick a really cute name. I started with 'Raspberry Jam,' but I added more to it as time passed. You know, I'll admit that a lot of it was an attention thing. I thought people would care more about me if I had a more glamorous name. It turns out, having a striking name does make people pay more attention to you." Lee smiled, content with himself.
+"I really like raspberry jam," Lee said, eager the answer the question. "A part of being a magical girl is that you get to be glamorous and cute, so I wanted to pick a really cute name. I started with 'Raspberry Jam,' but I added more to it as time passed. You know, I'll admit that a lot of it was an attention thing. I thought people would care more about me if I had a flashier name. It turns out I was right." Lee smiled, content with himself.
 ** "Does the name 'Lee Nisim' not get you enough attention?"
     "I like my regular name well enough. There's nothing wrong with it, honestly. I guess a part of me likes that I can have two different names. One that sparkles pink and one that is more usable. I can't imagine having people call me 'Steadfast Crystal Guardian Raspberry Jam' all the time." -> lee_questions
 ** "Is all this for attention, then?"
     "I mean, no." Lee wasn't happy with that. 
     *** "Not at all?"
         "Nope." 
+        ~ lee_likes_you = false
         **** "Not even a little?"
             "No."
             ***** "Are you sure?"
@@ -65,20 +69,70 @@ Lee made eye contact with the interviewer. "There's a few reasons. The first is 
 
 == explain_powers ==
 ~ lee_transform = true
-"I would love to. I have the power of rock, which isn't exactly the same thing as the power of earth or stone. Being a "rock" means that I'm strong, dependable, and unerodable. I'm stronger than average and I can always be there when you need me. Would you like to see me as Raspberry Jam?" Lee tapped their toes on the floor.
+"I would love to. I have the power of rock, which isn't exactly the same thing as the power of earth or stone. Being a "rock" means that I'm strong, dependable, and unerodable. I'm stronger than average and I can always be there when you need me. Would you like to see me as Raspberry Jam?" Lee tapped his toes on the floor.
 "Yeah, that would be wonderful."
 "I was waiting for you to ask." Lee took out a bright pink stone from his pocket. He stood up and walked to the space between his bed and his door. "Magical rock power, activate!" He said. A bright light enveloped Lee. He floated a few inches into the air and started spinning. His hair grew until it fell around his shoulders. Two baby blue bows on either side of his head held his hair into two pony tails. His clothes were replaced by a form-fitting white tank top that covered his shoulders and a pink pleated skirt that fell just above his knees. A necklace fell around his neck with a shining silver medalion. Nearly-knee-high platform boots materialized around his feet, made of black leather. The stone he was holding morphed into a large circular shield with concentric pink, white, and blue stripes. Lee grabbed the shield out of the air and his transformation was complete. The glow wore off and he fell gracefully to the ground. 
-Lee was smiling widly. He spun on the tips of his toes and held out a hand to the interviewer. "Steadfast Crystal Guardian Raspberry Jam, pleased to meet you."
-The interviewer shook his hand graciously. "Your costume is beautiful. Did you design it?"
-"No. Just like my shield and my weapon, it sort of just came about. It represents me and fits perfectly, don't you think?" Lee sat back down on his bed. He cheerfully dangled his feet above the ground. The bottom of his platform boots touched the floor.
+Lee was smiling widly. He spun on the tips of his toes and held out a hand to Isaac.  "Steadfast Crystal Guardian Raspberry Jam, pleased to meet you."
+Isaac shook his hand graciously. "Your costume is beautiful. Did you design it?"
+"No. Just like my shield and my weapon, it sort of just happened. It represents me and fits perfectly, don't you think?" Lee sat back down on his bed. 
 ** [Ask another question.] -> lee_questions
     
 == girl_who_is_a_boy ==
 "Some people think that I wouldn't like to dress up all girly when I fight monsters with the team, but honestly I love it. It's like..." He looked up for a second, considering what he was going to say. "All my life I get to be a boy, which is fine. As Lee, I'm quieter and more anxious. I get scared that people look through me and see nothing. I feel comfortable with what I wear, but none of it stands out. When I get to be Raspberry Jam, I'm so different. I can say what I want, I'm not nervous what people will think of me, and I just feel so bright. But I don't like to be that way all the time. I get tired and then I want to be Lee again. I guess I'm lucky that I get to choose like that."
-    "That's a wonderful statement. Thank you."
     ** [Ask another question.] -> lee_questions
     
+== how_often ==
+"Let me check," Lee said. They got up and reached for the calendar behind Isaac. He took it down and flipped through it.
+
+{team_trust == team_trust.none} He was careful to hide the contents of the calendar from Isaac. "We fight a monster once every few weeks. It isn't a constant issue. I don't know why you would want to know that. It's kind of a boring question." <>
+
+{team_trust == team_trust.wary} Isaac noticed Lee facing the calendar away from him. "We fight a monster once every few weeks. I think the need for magical girls around here has actually decreased a little bit. We're still happy to help out!" <>
+
+{team_trust == team_trust.tentative: 
+    "We fight a monster once every few weeks. Some people say that there shouldn't be any more monsters since we defeated Goregamesh, but I guess they're still around." Lee avoided eye contact with Isaac. He bit his right fingernail. <>
+    ~ monster_knowledge = monsters_should_have_stopped
+}
+
+{team_trust == team_trust.trusting: 
+    Lee put the calendar on the desk and let Isaac take a look. "The monsters should have stopped coming after we defeated Goregamesh. He was what made the monsters attack in the first place." Lee avoided eye contact with Isaac. He bit his right fingernail. <>
+    ~ monster_knowledge = monsters_should_have_stopped
+}
+
+[Ask another question.] -> lee_questions
+
+== source_of_monsters ==
+{lee_likes_you && team_trust == team_trust.trusting: 
+    "We don't really know a lot about monsters in general, but in theory it could be a magical girl, or someone or something with similar powers that could be making them," Lee said. isaac got the feeling that he was trying to sound smart. "Like I'm not a scienstist but the existence of magical girls and the existance of monsters must be connected, right?"
+    ~ monster_knowledge = girl_making_monsters
+- else:
+    "We don't really konw a lot about monsters in general. Our job is to defeat them, not to study them. Maybe you should talk to a scientist or something."
+}
+[Ask another question.] -> lee_questions
+
+== good_friends ==
+"Yeah, I would say that we are all pretty close. We weren't all friends before before we became magical girls, but we are all friends now, which is what really matters. I'm really happy that we could meet Serena through this group. She didn't have very many friends before. You know, it's kind of sad that what brings us all together is violence, but that's just the way it is I guess.
+"Kokoro is really bright. Sometimes, just being around her makes me smile. I don't really know what you think about Diana, but she's really been a good friend as well as a good teammate to all of us.
+"Clancy and I go way back though. It's nice to have him in the team. Gives us an extra excuse to hang out, even when we're so busy, you know?"
+"Do you have any many other friends outside of Rasberry Riot?" Isaac asked.
+"Yeah I guess so. I don't know. It's hard for me to keep talking to someone if I don't have any classes with them, so I'm not great at making friends. I guess Clancy and I were sort of a given though. I'm happy that Raspberry Riot gives me not only friends, but also a reason to keep on talking to them." Lee directed his gaze at the floor. "If, for whatever reason, we didn't have to be magical girls anymore, we would still be able to hang out pretty often. I mean, we already have every meeting planned every week for the next year,so."
+
+[Ask another question.] -> lee_questions
+
 == lee_conclusion ==
+{lee_likes_you:
+
+    {
+    - team_trust == team_trust.none:
+        ~ team_trust = team_trust.wary
+    - team_trust == team_trust.wary:
+        ~ team_trust = team_trust.tentative
+    - team_trust == team_trust.tentative:
+        ~ team_trust = team_trust.trusting
+    - team_trust == team_trust.trusting:
+    
+    }
+    
+}
 "Thank you for your time. Can you send someone else to come in?"
 "Sure," Lee said. "Who do you want to talk to next?"
 -> selection
