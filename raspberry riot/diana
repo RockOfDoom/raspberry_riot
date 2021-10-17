@@ -43,13 +43,14 @@ Pepper grips the collar around her open jacket and pulls up, resting her chin on
 
 Her hands crossed on the table become tight fists.
 
-" whether they won't me ALWAYS around or not."
+"whether they want me ALWAYS around or not."
 
 Her eyes dart quickly to the side, dragging her head slightly with them.
 
 "They need me."
 
-{team_trust == team_trust.trusting: She leans forward over the edge of the desk, "This group means more to me than you will ever know, I have to make sure that they are safe from anything or anyone that might split us apart."
+{team_trust == team_trust.trusting: 
+She leans forward over the edge of the desk, "This group means more to me than you will ever know, I have to make sure that they are safe from anything or anyone that might split us apart."
 
 She quickly snaps back into a relaxed state, adjust her glass, and leans back in the chair.
 
@@ -97,7 +98,7 @@ Pushing her anymore about this will probably lead nowhere.
  
 - "I've never been big into talking."
 
-She leans back sharply in her chair looking up towards the cieling.
+She leans back sharply in her chair looking up towards the ceiling.
 
 "If you want someone to pour their heart out to you ask seaglass, not me."
 
