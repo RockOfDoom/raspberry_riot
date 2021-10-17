@@ -57,7 +57,7 @@ Lee didn't respond. He swallowed and avoided eye contact.
     "If she is doing all that, what would you do about it?" Lee looked Isaac in the eye for a moment.
     "Lee, be an adult and tell me the truth."
     Lee looked away. That was all the proof Isaac needed.
-    "Thank you, Lee. That's enough," Isaac said. "You can send someone else in now."
+    "Thank you, Lee. That's enough," Isaac said.
     -> selection
 }
 
@@ -108,19 +108,18 @@ Isaac shook his hand graciously. "Your costume is beautiful. Did you design it?"
 == how_often ==
 "Let me check," Lee said. He got up and reached for the calendar behind Isaac. He took it down and flipped through it.
 
-{team_trust == team_trust.none} He was careful to hide the contents of the calendar from Isaac. "We fight a monster once every few weeks. It isn't a constant issue. I don't know why you would want to know that. It's kind of a boring question." <>
-
-{team_trust == team_trust.wary} Isaac noticed Lee facing the calendar away from him. "We fight a monster once every few weeks. I think the need for magical girls around here has actually decreased a little bit. We're still happy to help out!" <>
-
-{team_trust == team_trust.tentative:
-    "We fight a monster once every few weeks. Some people say that there shouldn't be any more monsters since we defeated Goregamesh, but I guess they're still around." Lee avoided eye contact with Isaac. He bit his right fingernail. <>
+{
+    - team_trust == team_trust.none:
+    He was careful to hide the contents of the calendar from Isaac. "We fight a monster once every few weeks. It isn't a constant issue. I don't know why you would want to know that. It's kind of a boring question."
+    - team_trust == team_trust.wary:
+    Isaac noticed Lee facing the calendar away from him. "We fight a monster once every few weeks. I think the need for magical girls around here has actually decreased a little bit. We're still happy to help out!"
+    - team_trust == team_trust.tentative:
+    "We fight a monster once every few weeks. Some people say that there shouldn't be any more monsters since we defeated Goregamesh, but I guess they're still around." Lee avoided eye contact with Isaac. He bit his right fingernail.
     ~ monster_knowledge = monsters_should_have_stopped
-}
-
-{team_trust == team_trust.trusting:
-    Lee put the calendar on the desk and let Isaac take a look. "The monsters should have stopped coming after we defeated Goregamesh. He was what made the monsters attack in the first place." Lee avoided eye contact with Isaac. He bit his right fingernail. <>
+    - team_trust == team_trust.trusting:
+    Lee put the calendar on the desk and let Isaac take a look. "The monsters should have stopped coming after we defeated Goregamesh. He was what made the monsters attack in the first place." Lee avoided eye contact with Isaac. He bit his right fingernail.
     ~ monster_knowledge = monsters_should_have_stopped
-}
+} 
 
 * [Ask another question.] -> lee_questions
 
@@ -153,7 +152,7 @@ Isaac shook his hand graciously. "Your costume is beautiful. Did you design it?"
     }
     
 }
-"Thank you for your time. Can you send someone else to come in?"
-"Sure," Lee said. "Who do you want to talk to next?"
+"Thank you for your time."
+"Sure," Lee said.
 -> selection
 

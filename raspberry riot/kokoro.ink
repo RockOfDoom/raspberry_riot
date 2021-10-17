@@ -37,7 +37,7 @@ Kokoro gave him a stiff nod, so he proceeded.
 * {huckleberry == is_lonely && asked_about_teammates == false} What do you think about your teammates? Huckleberry specifically seems to be an interesting girl.
     {move_to_state(huckleberry, worries_abt_noMonsters)}
     ~ asked_about_teammates = true
-    Kokoro considered the question for a moment. "Let's see...There's Lee, our lee-der!" She giggled at her own pun. "They're always pushing us to do our best and making sure that nobody gets lazy or complacent! I definitely have a lot of respect for him, he's our rock."
+    Kokoro considered the question for a moment. "Let's see...There's Lee, our lee-der!" She giggled at her own pun. "He's always pushing us to do our best and making sure that nobody gets lazy or complacent! I definitely have a lot of respect for him, he's our rock."
     "Then there's Serena. She doesn't have any friends but us. After we beat the King of Kings, Goregamesh, she was really worried for a while that the team would fall apart without anything to do. But, monsters started appearing not too long after, so she calmed down some. Silly girl...I'd always be her friend, no matter what! I've been trying to get her to make new friends, but some people just aren't very good at it."
     Isaac nodded, so the girl continued, explaining her perspectives on each of the other team members. Nothing really stood out, though.
     -> askkokoro
@@ -49,7 +49,7 @@ Kokoro gave him a stiff nod, so he proceeded.
     }
     "Not always!" She giggled a little, remembering a particular fight. "Like, okay, last week, we had to fight a giant ice cream cone. And it was my favorite flavor, bubblegum! It was kind of weird eating a monster, but...Bubblegum ice cream..." She smiled, and continued. "And like, I dunno, some of the time recently they're stuff that's been on my mind lately, for some reason. Like I'll be talking to everyone about coffee, and we have to fight some weirdo who's calling himself the Mean Bean Machine."
     "Still, aren't you scared of getting hurt?"
-    "Nah, not really. I know that Lee could heal us up if we get hurt too bad, and everything's been okay so far."
+    "Nah, not really. I know that Serena could heal us up if we get hurt too bad, and everything's been okay so far."
     That was a fair perspective. And she was young, it's possible she didn't realize the danger she was in.
     -> askkokoro
     

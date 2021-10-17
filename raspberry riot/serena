@@ -148,7 +148,8 @@ Huckleberry looked quite pleased with herself.
 
 
 ==serena_q6===
-{move_to_state(monster_knowledge, monsterKing_dead)}{~monsterQ_cycle++}
+{move_to_state(monster_knowledge, monsterKing_dead)}
+~ monsterQ_cycle++
 "Honestly?" Huckleberry started, "It's kind of exciting."
 
 "It definitely used to be scarier, back when we were up against King Goregamesh, but ever since we handled him the monsters have been way less dangerous." She tapped her staff against the ground firmly, {monster_knowledge == girl_making_monsters:almost like she was trying to convince herself.}{monster_knowledge < girl_making_monsters:as if to emphasize her point.}
