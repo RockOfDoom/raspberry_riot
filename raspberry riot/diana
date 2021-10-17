@@ -1,4 +1,6 @@
 ==pepper==
+VAR pepper_transform = false
+VAR pepper_likes_you = true
 
 Clad in red and black streetwear slightly hidden behind an oversized rust colored duster pepper stomps into the room and stops. She squints at the two bright lights above the desk, grabbing a pair of aviators from a mess of bent and dirty sunglasses in her duster pocket. Her face goes from an uncomfrotable scowl to a somber tired look as she sits down and crosses her arms facing the interviewer.
 
@@ -30,6 +32,9 @@ The interviewer pulls out a list of questions from a pile of vanilla and yellow 
 Pepper grips the collar around her open jacket and pulls up, resting her chin on the flats of her fists. Focusing on some object miles away below the table.
 
 "I realized that I was able to do more than just push people away," her teeth clench and her expression becomes somber; before quickly disappearing into a content smirk, "I could pull things too. I didn't even have to touch them."
+{team_trust == team_trust.tentative}
+"I was 
+
 
 -> pepper_choices
 
@@ -43,6 +48,13 @@ Her hands crossed on the table become tight fists.
 Her eyes dart quickly to the side, dragging her head slightly with them.
 
 "They need me."
+
+{team_trust == team_trust.trusting: She leans forward over the edge of the desk, "This group means more to me than you will ever know, I have to make sure that they are safe from anything or anyone that might split us apart."
+
+She quickly snaps back into a relaxed state, adjust her glass, and leans back in the chair.
+
+} 
+
 
 -> pepper_choices
 
@@ -58,9 +70,28 @@ She lets out a light chuckle that quickly subsides to a sharp look, as if she ha
  ==pepper_q4==
 - "I can push and pull things just by thinking about them. Not much to it."
 
-Staring at her wrist, a bracelet with five different colored beads laced within a braided chain begins to spin on it's own. A dark red auora shimmers around it as it rotates slowly.
+Staring at her wrist, a bracelet with three different colored beads laced within a braided chain begins to spin on it's own. A dark red auora shimmers around it as it rotates slowly.
+
+{huckleberry == is_the_culprit: 
+
+*[Press Pepper About The Bracelet] "I notice you are missing a bead? They represent the girls, I am guessing?"
+-> bracelet_question
+}
 
 -> pepper_choices
+
+==bracelet_question==
+
+The bracelet falls limp on her wrist and the red auroa dissapears.
+
+"No. These ones just came with it." 
+
+Her hand disapears behind the edge of the desk out of sight, her eyes dodging Issac's gaze.  
+
+Pushing her anymore about this will probably lead nowhere.
+
+->pepper_choices
+
 
  ==pepper_q5==
  
