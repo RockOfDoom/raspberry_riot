@@ -48,10 +48,10 @@ Lee didn't respond. He swallowed and avoided eye contact.
 "Is Serena the one summoning all the monsters?"
 {
     - team_trust == trusting: "Yes. Please don't do anything to her. I can get her to stop I promise."
-    "Thank you for being honest with me." Isaac didn't know what to do. he knew that with this knowledge he had to quickly escalate the situation. He felt bad for Serena, but at the same time he couldn't do nothing about it. That was against his journalistic integrity. He felt the air in the room shift. It was suddenly much colder. "You really are unerodable. This was the right thing to do, for Serena's safety as well as for the whole city's."
+    "Thank you for being honest with me." Isaac didn't know what to do. He knew that with this knowledge he had to quickly escalate the situation. He felt bad for Serena, but at the same time he couldn't just do nothing about it. That was against his journalistic integrity. He felt the air in the room shift. It was suddenly much colder. "You really are unerodable. This was the right thing to do, for Serena's safety as well as for the whole city's."
     "It better be," Lee said.
     * [Ask another question.] -> lee_questions
-    - else: 
+    - else:
     "No."
     "You know, this is a big deal. Please don't lie to me."
     "If she is doing all that, what would you do about it?" Lee looked Isaac in the eye for a moment.
@@ -62,16 +62,16 @@ Lee didn't respond. He swallowed and avoided eye contact.
 }
 
 == magical_girl_origin ==
-"It was when that big monster attacked the city, when the previous team was defeated," Lee began. "I'm sure you remember." Isaac studied Lee, unsure of what he felt. He avoided eye contact. 
+"It was when that big monster attacked the city, when the previous team was defeated," Lee began. "I'm sure you remember." Isaac studied Lee, unsure of what he felt. He avoided eye contact.
 After a moment, he realized he was done telling the story.
     ** "Any other details you want to add?"
-        Lee looked around the room for a second. He picked at his fingernail with his other hand. "Um." He bit his lip. "No." 
+        Lee looked around the room for a second. He picked at his fingernail with his other hand. "Um." He bit his lip. "No."
         ~ lee_likes_you = false
         -> lee_questions
     ** [Ask another question.] -> lee_questions
 
 == what_makes_you_leader ==
-Lee made eye contact with Isaac. "There's a few reasons. The first is that I'm the most organized." He pointed at the calendar on the wall. "On that calendar I have every meeting scheduled for the next school year. I was also the one who wanted to meet every week," he went on. "I was the one who brought everyone together. At one point, people outside the team started calling me the leader, too. I was the one who you contacted first, right? That must mean something." Lee's words were confident, but Isaac could see his arms shaking. 
+Lee made eye contact with Isaac. "There's a few reasons. The first is that I'm the most organized." He pointed at the calendar on the wall. "On that calendar I have every meeting scheduled for the next school year. I was also the one who wanted to meet every week," he went on. "I was the one who brought everyone together. At one point, people outside the team started calling me the leader, too. I was the one who you contacted first, right? That must mean something." Lee's words were confident, but Isaac could see his arms shaking.
 ** [Ask another question.] -> lee_questions
 
 == choose_your_name ==
@@ -79,9 +79,9 @@ Lee made eye contact with Isaac. "There's a few reasons. The first is that I'm t
 ** "Does the name 'Lee Nisim' not get you enough attention?"
     "I like my regular name well enough. There's nothing wrong with it, honestly. I guess a part of me likes that I can have two different names. One that sparkles pink and one that is more usable. I can't imagine having people call me 'Steadfast Crystal Guardian Raspberry Jam' all the time." -> lee_questions
 ** "Is all this for attention, then?"
-    "I mean, no." Lee wasn't happy with that. 
+    "I mean, no." Lee wasn't happy with that.
     *** "Not at all?"
-        "Nope." 
+        "Nope."
         ~ lee_likes_you = false
         **** "Not even a little?"
             "No."
@@ -95,10 +95,10 @@ Lee made eye contact with Isaac. "There's a few reasons. The first is that I'm t
 ~ lee_transform = true
 "I would love to. I have the power of rock, which isn't exactly the same thing as the power of earth or stone. Being a "rock" means that I'm strong, dependable, and unerodable. I'm stronger than average and I can always be there when you need me. Would you like to see me as Raspberry Jam?" Lee tapped his toes on the floor.
 "Yeah, that would be wonderful."
-"I was waiting for you to ask." Lee took out a bright pink stone from his pocket. He stood up and walked to the space between his bed and his door. "Magical rock power, activate!" He said. A bright light enveloped Lee. He floated a few inches into the air and started spinning. His hair grew until it fell around his shoulders. Two baby blue bows on either side of his head held his hair into two pony tails. His clothes were replaced by a form-fitting white tank top that covered his shoulders and a pink pleated skirt that fell just above his knees. A necklace fell around his neck with a shining silver medalion. Nearly-knee-high platform boots materialized around his feet, made of black leather. The stone he was holding morphed into a large circular shield with concentric pink, white, and blue stripes. Lee grabbed the shield out of the air and his transformation was complete. The glow wore off and he fell gracefully to the ground. 
-Lee was smiling widly. He spun on the tips of his toes and held out a hand to Isaac.  "Steadfast Crystal Guardian Raspberry Jam, pleased to meet you."
+"I was waiting for you to ask." Lee took out a bright pink stone from his pocket. He stood up and walked to the space between his bed and his door. "Magical rock power, activate!" He said. A bright light enveloped Lee. He floated a few inches into the air and started spinning. His hair grew until it fell around his shoulders. Two baby blue bows on either side of his head held his hair into two pony tails. His clothes were replaced by a form-fitting white tank top that covered his shoulders and a pink pleated skirt that fell just above his knees. A necklace fell around his neck with a shining silver medallion. Nearly-knee-high platform boots materialized around his feet, made of black leather. The stone he was holding morphed into a large circular shield with concentric pink, white, and blue stripes. Lee grabbed the shield out of the air and his transformation was complete. The glow wore off and he fell gracefully to the ground.
+Lee was smiling wildly. He spun on the tips of his toes and held out a hand to Isaac.  "Steadfast Crystal Guardian Raspberry Jam, pleased to meet you."
 Isaac shook his hand graciously. "Your costume is beautiful. Did you design it?"
-"No. Just like my shield and my weapon, it sort of just happened. It represents me and fits perfectly, don't you think?" Lee sat back down on his bed. 
+"No. Just like my shield and my weapon, it sort of just happened. It represents me and fits perfectly, don't you think?" Lee sat back down on his bed.
 ** [Ask another question.] -> lee_questions
     
 == girl_who_is_a_boy ==
@@ -106,18 +106,18 @@ Isaac shook his hand graciously. "Your costume is beautiful. Did you design it?"
     ** [Ask another question.] -> lee_questions
     
 == how_often ==
-"Let me check," Lee said. They got up and reached for the calendar behind Isaac. He took it down and flipped through it.
+"Let me check," Lee said. He got up and reached for the calendar behind Isaac. He took it down and flipped through it.
 
 {team_trust == team_trust.none} He was careful to hide the contents of the calendar from Isaac. "We fight a monster once every few weeks. It isn't a constant issue. I don't know why you would want to know that. It's kind of a boring question." <>
 
 {team_trust == team_trust.wary} Isaac noticed Lee facing the calendar away from him. "We fight a monster once every few weeks. I think the need for magical girls around here has actually decreased a little bit. We're still happy to help out!" <>
 
-{team_trust == team_trust.tentative: 
+{team_trust == team_trust.tentative:
     "We fight a monster once every few weeks. Some people say that there shouldn't be any more monsters since we defeated Goregamesh, but I guess they're still around." Lee avoided eye contact with Isaac. He bit his right fingernail. <>
     ~ monster_knowledge = monsters_should_have_stopped
 }
 
-{team_trust == team_trust.trusting: 
+{team_trust == team_trust.trusting:
     Lee put the calendar on the desk and let Isaac take a look. "The monsters should have stopped coming after we defeated Goregamesh. He was what made the monsters attack in the first place." Lee avoided eye contact with Isaac. He bit his right fingernail. <>
     ~ monster_knowledge = monsters_should_have_stopped
 }
@@ -125,16 +125,16 @@ Isaac shook his hand graciously. "Your costume is beautiful. Did you design it?"
 * [Ask another question.] -> lee_questions
 
 == source_of_monsters ==
-{lee_likes_you && team_trust == team_trust.trusting: 
-    "We don't really know a lot about monsters in general, but in theory it could be a magical girl, or someone or something with similar powers that could be making them," Lee said. isaac got the feeling that he was trying to sound smart. "Like I'm not a scienstist but the existence of magical girls and the existance of monsters must be connected, right?"
+{lee_likes_you && team_trust == team_trust.trusting:
+    "We don't really know a lot about monsters in general, but in theory it could be a magical girl, or someone or something with similar powers that could be making them," Lee said. Isaac got the feeling that he was trying to sound smart. "Like I'm not a scientist but the existence of magical girls and the existence of monsters must be connected, right?"
     ~ monster_knowledge = girl_making_monsters
 - else:
-    "We don't really konw a lot about monsters in general. Our job is to defeat them, not to study them. Maybe you should talk to a scientist or something."
+    "We don't really know a lot about monsters in general. Our job is to defeat them, not to study them. Maybe you should talk to a scientist or something."
 }
 [Ask another question.] -> lee_questions
 
 == good_friends ==
-"Yeah, I would say that we are all pretty close. We weren't all friends before before we became magical girls, but we are all friends now, which is what really matters. Clancy and I go way back though. It's nice to have him in the team. Gives us an extra excuse to hang out, even when we're so busy, you know?"
+"Yeah, I would say that we are all pretty close. We weren't all friends before we became magical girls, but we are all friends now, which is what really matters. Clancy and I go way back though. It's nice to have him in the team. Gives us an extra excuse to hang out, even when we're so busy, you know?"
 
 * [Ask another question.] -> lee_questions
 
@@ -156,3 +156,4 @@ Isaac shook his hand graciously. "Your costume is beautiful. Did you design it?"
 "Thank you for your time. Can you send someone else to come in?"
 "Sure," Lee said. "Who do you want to talk to next?"
 -> selection
+

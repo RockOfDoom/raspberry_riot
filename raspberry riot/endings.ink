@@ -19,7 +19,7 @@ Well, when you laid all the facts out...
 //monstermaking 2:
 {monster_knowledge == monsters_should_have_stopped:We still don't know why the monsters kept coming after Goregamesh was slain.}
 //monstermaking 3:
-{monster_knowledge == girl_making_monsters:One of the Raspberry Rioteers are making monsters.}
+{monster_knowledge == girl_making_monsters:One of the Raspberry Rioters is making monsters.}
 //Huckleberry 0:
 //don't display anything
 //huckle 1:
@@ -38,11 +38,11 @@ Well, when you laid all the facts out...
 //t2:
 {team_trust == tentative:"Aww, okay!" Kokoro frowned, but it only lasted a moment. She gave him a smile, waving with the rest of the team. "I hope we get to see you again sometime soon! Let us know if there's anything else you wanna talk about, okay?"}
 //t3:
-{team_trust == trusting:They crowded around him as he went to leave. "Aww, are you sure you have to go?" There were frowns all around. "You could stay for dinner or something? Right, mom?" Lee turned to his mother for conformation. When she shook her head, Lee turned back to Isaac. "Okay. Well, feel free to drop by any time! Thanks for coming by, Isaac!"}
+{team_trust == trusting:They crowded around him as he went to leave. "Aww, are you sure you have to go?" There were frowns all around. "You could stay for dinner or something? Right, mom?" Lee turned to his mother for confirmation. When she shook her head, Lee turned back to Isaac. "Okay. Well, feel free to drop by anytime! Thanks for coming by, Isaac!"}
 
 //if huckle is LESS than 3:
 {huckleberry < is_the_culprit:
-    With that, he made his exit. They were certainly an odd bunch, the Raspberry Riot. Still, he couldn't deny that they had heart. 
+    With that, he made his exit. They were certainly an odd bunch, the Raspberry Riot. Still, he couldn't deny that they had heart.
     //if monmaking is less than 3:
     {monster_knowledge < girl_making_monsters:
         He felt the city was safe in their hands. It would be fine, even if the monsters kept coming. They had a strong team, and above that, strong friendship.
@@ -51,7 +51,7 @@ Well, when you laid all the facts out...
     }
 
     //if it's more:
-    He would definitely need to do followup investigations. Just who among them was making monsters...? And why? They fought monsters, none of them holding back. If they were trying to wipe them out, then why...? He frowned, trudging home. He could turn it over to the police, but then he wouldn't get the story. His career needed something, or he'd be out on the streets himself. He resolved to come back and try again another day.
+    He would definitely need to do follow up investigations. Just who among them was making monsters...? And why? They fought monsters, none of them holding back. If they were trying to wipe them out, then why...? He frowned, trudging home. He could turn it over to the police, but then he wouldn't get the story. His career needed something, or he'd be out on the streets himself. He resolved to come back and try again another day.
     //END
     -> DONE
 }
@@ -80,7 +80,7 @@ She looked so small.
 -> DONE
 
 === freeend ===
-//Serena presumeably asks why? If not, Kokoro will?
+//Serena presumably asks why? If not, Kokoro will?
 "What???" asks Huckleberry. "Is this supposed to be pity or something?"
 "I know you're young. Only around 16, right? I won't pretend I didn't make stupid decisions at age sixteen. Admittedly, yours are a little more destructive, but nobody's actually died. Yet. I hope you know this can't continue. If you keep summoning monsters, I will be forced to turn you in. But I understand why you did it...I was always the loner in school as well." He sighed, shaking his head. "Just trust in your friends, alright? They're your friends. Not your co-workers."
 Kokoro piped up, nodding. "Yeah! We love you for you! We'll be your friends no matter what, okay? It doesn't matter if we don't have anything to fight. We'll always be Raspberry Riot, and we'll always be linked to each other! No matter how far apart we may move, or if we don't talk anymore, or no matter what, you will always have us! We're family. And family is there for eachother. If you ever need a shoulder to cry on, or a place to rest your head, don't hesitate to call us up, okay?" She pulled Serena into a tight hug. "I'm sorry if I made you feel like there was no other choice. Let's go out for ice cream later, okay? We can just hang out and relax. No monsters, no magic, just friends having a good time together. Does that sound good?"
@@ -90,11 +90,12 @@ Huckleberry's (Serena's?) long hair covered her eyes, and she looked away from I
 "God, this job can't be good for me if I thought of summoning dark armies before I thought about talking to my..."
 "To your friends!" insisted Kokoro. "To your friends." agreed Lee.
 "Right." Serena sniffed. "My friends..."
-"Good." Kokoro gently pet the other girl's hair. "Let's head out, then!"
+"Good." Kokoro gently petted the other girl's hair. "Let's head out, then!"
 With that, the two girls strode out, Kokoro taking Serena's hand. Isaac watched them go, a smile on his face.
 And that was the end of the magical girl team Raspberry Riot.
 No more monsters.
 No more fights.
 Just a group of true friends.
-THE END 
+THE END
 -> DONE
+

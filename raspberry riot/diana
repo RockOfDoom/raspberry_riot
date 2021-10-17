@@ -2,9 +2,9 @@
 VAR pepper_transform = false
 VAR pepper_likes_you = true
 
-Clad in red and black streetwear slightly hidden behind an oversized rust colored duster pepper stomps into the room and stops. She squints at the two bright lights above the desk, grabbing a pair of aviators from a mess of bent and dirty sunglasses in her duster pocket. Her face goes from an uncomfrotable scowl to a somber tired look as she sits down and crosses her arms facing the interviewer.
+Clad in red and black streetwear slightly hidden behind an oversized rust colored duster, Pepper stomped into the room and stopped. She squinted at the two bright lights above the desk, grabbing a pair of aviators from a mess of bent and dirty sunglasses in her duster pocket. Her face went from an uncomfortable scowl to a somber tired look as she sat down and crossed her arms, facing the interviewer.
 
-She nods in recognition of the interviewer sitting across from her, as if she had just noticed that they were even present until now.
+She nodded in recognition of the interviewer sitting across from her, as if she hadn’t noticed that they were even present until now.
 
 The interviewer pulls out a list of questions from a pile of vanilla and yellow folders on their desk.
 
@@ -29,37 +29,37 @@ The interviewer pulls out a list of questions from a pile of vanilla and yellow 
  ==pepper_q1==
 "I had been alone for so long."
 
-Pepper grips the collar around her open jacket and pulls up, resting her chin on the flats of her fists. Focusing on some object miles away below the table.
+Pepper gripped the collar around her open jacket and pulled up, resting her chin on the flats of her fists. Focused on some object miles away below the table.
 
-"I realized that I was able to do more than just push people away," her teeth clench and her expression becomes somber; before quickly disappearing into a content smirk, "I could pull things too. I didn't even have to touch them."
+"I realized that I was able to do more than just push people away," her teeth clenched and her expression became somber before quickly disappearing into a content smirk, "I could pull things too. I didn't even have to touch them."
 
 -> pepper_choices
 
  ==pepper_q2==
 - "Because I have to,"
 
-Her hands crossed on the table become tight fists.
+Her hands crossed on the table became tight fists.
 
 "whether they want me ALWAYS around or not."
 
-Her eyes dart quickly to the side, dragging her head slightly with them.
+Her eyes darted quickly to the side, dragging her head slightly with them.
 
 "They need me."
 
-{team_trust == team_trust.trusting: 
-She leans forward over the edge of the desk, "This group means more to me than you will ever know, I have to make sure that they are safe from anything or anyone that might split us apart."
+{team_trust == team_trust.trusting:
+She leaned forward over the edge of the desk, "This group means more to me than you will ever know, I have to make sure that they are safe from anything or anyone that might split us apart."
 
-She quickly snaps back into a relaxed state, adjust her glass, and leans back in the chair.
+She quickly snapped back into a relaxed state, adjusted her glass, and leaned back in the chair.
 
-} 
+}
 
 
 -> pepper_choices
 
  ==pepper_q3==
-- "It's a berry too you know..." 
+- "It's a berry too you know..."
 
-She lets out a light chuckle that quickly subsides to a sharp look, as if she has practiced her answer many times before.
+She let out a light chuckle that quickly subsided to a sharp look, as if she had practiced her answer many times before.
 
 "Might not be the sweetest but it's still a berry."
 
@@ -68,9 +68,9 @@ She lets out a light chuckle that quickly subsides to a sharp look, as if she ha
  ==pepper_q4==
 - "I can push and pull things just by thinking about them. Not much to it."
 
-Staring at her wrist, a bracelet with three different colored beads laced within a braided chain begins to spin on it's own. A dark red auora shimmers around it as it rotates slowly.
+Pepper stared at her wrist, a bracelet with three different colored beads laced within a braided chain, and it began to spin on its own. A dark red aura shimmers around it as it rotates slowly.
 
-{huckleberry == is_the_culprit: 
+{huckleberry == is_the_culprit:
 
 *[Press Pepper About The Bracelet] "I notice you are missing a bead? They represent the girls, I am guessing?"
 -> bracelet_question
@@ -80,11 +80,11 @@ Staring at her wrist, a bracelet with three different colored beads laced within
 
 ==bracelet_question==
 
-The bracelet falls limp on her wrist and the red auroa dissapears.
+The bracelet fell limp on her wrist and the red aura disappeared.
 
-"No. These ones just came with it." 
+"No. These ones just came with it."
 
-Her hand disapears behind the edge of the desk out of sight, her eyes dodging Issac's gaze.  
+Her hand disappeared behind the edge of the desk out of sight, her eyes dodging Issac's gaze.  
 
 Pushing her anymore about this will probably lead nowhere.
 
@@ -95,13 +95,16 @@ Pushing her anymore about this will probably lead nowhere.
  
 - "I've never been big into talking."
 
-She leans back sharply in her chair looking up towards the ceiling.
+She leaned back sharply in her chair, looking up towards the ceiling.
 
-"If you want someone to pour their heart out to you ask seaglass, not me."
+"If you want someone to pour their heart out to you, ask Seaglass, not me."
 
-She crosses her arms and looks down towards the table, still leaning back as if bracing to hit a pool of water from some great height.
+She crossed her arms and looked down towards the table, still leaning back as if bracing to hit a pool of water from some great height.
 
 ->pepper_choices
 
 ==pepper_wrapup==
     -> selection
+
+
+
