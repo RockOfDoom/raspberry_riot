@@ -31,11 +31,35 @@ Lee sat down on his bed. He looked at Isaac.
             
 * "What makes you the leader of Raspberry Riot? I mean, besides your name."
     -> what_makes_you_leader
+    
+* {huckleberry == worries_abt_noMonsters && monster_knowledge == girl_making_monsters} "I have something important I need to ask you."
+    -> important_question
         
 * "Those are all my questions."
     -> lee_conclusion
 
 *   -> lee_conclusion
+
+== important_question ==
+~ huckleberry = is_the_culprit
+"Yeah?" Lee asked. "What is it?" He started bouncing his leg. Isaac had an uneasy feeling that Lee knew what he was going to ask already.
+"You're a smart kid, which is why I wanted to ask you about this. Let me put a few facts down first. You defeated Goregamesh, which means that there should be no more monsters, but nonetheless more monsters keep on appearing." Isaac paused, but didn't wait for Lee to say anything before continuing. "Furthermore, you said that a magical girl could be summoning the monsters. Serena is lonely. She has no friends outside of Raspberry Riot. In fact, she is worried that if there were no more monsters, then there would be no more reason for Raspberry Riot to exist. Do you see where I'm going with this?"
+Lee didn't respond. He swallowed and avoided eye contact.
+"Is Serena the one summoning all the monsters?"
+{
+    - team_trust == trusting: "Yes. Please don't do anything to her. I can get her to stop I promise."
+    "Thank you for being honest with me." Isaac didn't know what to do. he knew that with this knowledge he had to quickly escalate the situation. He felt bad for Serena, but at the same time he couldn't do nothing about it. That was against his journalistic integrity. He felt the air in the room shift. It was suddenly much colder. "You really are unerodable. This was the right thing to do, for Serena's safety as well as for the whole city's."
+    "It better be," Lee said.
+    * [Ask another question.] -> lee_questions
+    - else: 
+    "No."
+    "You know, this is a big deal. Please don't lie to me."
+    "If she is doing all that, what would you do about it?" Lee looked Isaac in the eye for a moment.
+    "Lee, be an adult and tell me the truth."
+    Lee looked away. That was all the proof Isaac needed.
+    "Thank you, Lee. That's enough," Isaac said. "You can send someone else in now."
+    -> selection
+}
 
 == magical_girl_origin ==
 "It was when that big monster attacked the city, when the previous team was defeated," Lee began. "I'm sure you remember." Isaac studied Lee, unsure of what he felt. He avoided eye contact. 
@@ -98,7 +122,7 @@ Isaac shook his hand graciously. "Your costume is beautiful. Did you design it?"
     ~ monster_knowledge = monsters_should_have_stopped
 }
 
-[Ask another question.] -> lee_questions
+* [Ask another question.] -> lee_questions
 
 == source_of_monsters ==
 {lee_likes_you && team_trust == team_trust.trusting: 
@@ -110,13 +134,9 @@ Isaac shook his hand graciously. "Your costume is beautiful. Did you design it?"
 [Ask another question.] -> lee_questions
 
 == good_friends ==
-"Yeah, I would say that we are all pretty close. We weren't all friends before before we became magical girls, but we are all friends now, which is what really matters. I'm really happy that we could meet Serena through this group. She didn't have very many friends before. You know, it's kind of sad that what brings us all together is violence, but that's just the way it is I guess.
-"Kokoro is really bright. Sometimes, just being around her makes me smile. I don't really know what you think about Diana, but she's really been a good friend as well as a good teammate to all of us.
-"Clancy and I go way back though. It's nice to have him in the team. Gives us an extra excuse to hang out, even when we're so busy, you know?"
-"Do you have any many other friends outside of Rasberry Riot?" Isaac asked.
-"Yeah I guess so. I don't know. It's hard for me to keep talking to someone if I don't have any classes with them, so I'm not great at making friends. I guess Clancy and I were sort of a given though. I'm happy that Raspberry Riot gives me not only friends, but also a reason to keep on talking to them." Lee directed his gaze at the floor. "If, for whatever reason, we didn't have to be magical girls anymore, we would still be able to hang out pretty often. I mean, we already have every meeting planned every week for the next year,so."
+"Yeah, I would say that we are all pretty close. We weren't all friends before before we became magical girls, but we are all friends now, which is what really matters. Clancy and I go way back though. It's nice to have him in the team. Gives us an extra excuse to hang out, even when we're so busy, you know?"
 
-[Ask another question.] -> lee_questions
+* [Ask another question.] -> lee_questions
 
 == lee_conclusion ==
 {lee_likes_you:
